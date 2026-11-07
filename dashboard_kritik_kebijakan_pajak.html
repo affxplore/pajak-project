@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suara Rakyat: Menolak Pajak Mencekik</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(239, 68, 68, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(239, 68, 68, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800 bg-slate-900/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-red-500/10 rounded-xl border border-red-500/20 text-red-500">
+                    <i data-lucide="receipt-tax" class="w-6 h-6"></i>
+                </div>
+                <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-100">
+                    PAJAK<span class="text-red-500">MENCEKIK</span>.ID
+                </span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+                <a href="#isu-utama" class="hover:text-red-400 transition-colors">Isu Utama</a>
+                <a href="#kalkulator" class="hover:text-red-400 transition-colors">Kalkulator Beban</a>
+                <a href="#suara-rakyat" class="hover:text-red-400 transition-colors">Suara Publik</a>
+            </nav>
+            <a href="#suara-rakyat" class="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg shadow-red-900/30 transition-all flex items-center gap-2">
+                <i data-lucide="megaphone" class="w-4 h-4"></i>
+                <span>Bersuara!</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 space-y-16">
+
+        <!-- Hero Section -->
+        <section class="text-center space-y-6 max-w-3xl mx-auto pt-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs sm:text-sm font-medium">
+                <i data-lucide="alert-circle" class="w-4 h-4"></i>
+                <span>Kritik Kebijakan Perpajakan Indonesia</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                Rakyat Berjuang Bertahan Hidup, <br class="hidden sm:inline"/>
+                <span class="gradient-text">Malah Diincar Pajak Mencekik</span>
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+                Dari kebutuhan mendasar perempuan yang bukan barang mewah hingga usaha rakyat kecil yang berjuang mencari sesuap nasi, kebijakan pajak kian hari terasa kian mencekik.
+            </p>
+        </section>
+
+        <!-- Dynamic Issue Grid -->
+        <section id="isu-utama" class="space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-100 flex items-center gap-2">
+                        <i data-lucide="flame" class="text-orange-500 w-6 h-6"></i>
+                        Sorotan Isu Kebijakan Pajak
+                    </h2>
+                    <p class="text-slate-400 text-sm">Realita kebijakan perpajakan yang dinilai melukai rasa keadilan masyarakat.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1: Pembalut Wanita -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition-all group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-pink-400">Kebutuhan Biologis</span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-pink-400 transition-colors">Pajak pada Pembalut Wanita</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Pembalut adalah kebutuhan sanitasi dasar perempuan yang tidak bisa dihindari, bukan barang mewah! Mengenakan PPN 11%–12% pada barang biologis primer adalah bentuk ketidakadilan gender dan pemajakan yang keliru.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span>Status: <strong class="text-red-400">Dikenakan PPN</strong></span>
+                        <span class="flex items-center gap-1 text-pink-400 font-semibold"><i data-lucide="circle-dot" class="w-3 h-3"></i> Tuntutan: Bebas Pajak</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tukang Cukur & Pijat -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition-all group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="scissors" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Sektor Informal</span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Target Pajak Tukang Cukur & Pijat</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Ketika melihat rakyat kecil memeras keringat di jalanan—seperti tukang cukur keliling dan jasa pijat—bukannya diberi perlindungan atau insentif, wacana yang muncul justru memeras mereka sebagai potensi objek pajak.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span>Status: <strong class="text-amber-400">Sorotan Wacana</strong></span>
+                        <span class="flex items-center gap-1 text-amber-400 font-semibold"><i data-lucide="shield-alert" class="w-3 h-3"></i> Tuntutan: Lindungi UMKM</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: PPN Naik 12% -->
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition-all group md:col-span-2 lg:col-span-1">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-red-400">Daya Beli Tergerus</span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">Kenaikan PPN Menjadi 12%</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Di tengah gelombang PHK dan menurunnya daya beli kelas menengah, kenaikan PPN semakin mendongkrak harga barang pokok dan jasa, yang secara bertahap mencekik ekonomi keluarga.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span>Efek: <strong class="text-red-400">Inflasi Barang</strong></span>
+                        <span class="flex items-center gap-1 text-red-400 font-semibold"><i data-lucide="x-circle" class="w-3 h-3"></i> Tuntutan: Evaluasi PPN</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="kalkulator" class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 text-xs font-semibold">
+                        <i data-lucide="calculator" class="w-3.5 h-3.5"></i> Simulated Tax Impact
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">Berapa Banyak Pajak yang Membebankan Pengeluaran Bulananmu?</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Hitung estimasi PPN (11% - 12%) yang kamu bayarkan setiap bulan dari konsumsi barang dasar, higiene, dan jasa sehari-hari.
+                    </p>
+                </div>
+                
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Total Pengeluaran Bulanan (Rp)</label>
+                        <input type="number" id="monthlyExpense" value="3000000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-500 transition-colors font-mono">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-800">
+                            <span class="text-xs text-slate-400 block mb-1">Estimasi PPN Dibayar</span>
+                            <span id="ppnResult" class="text-lg font-bold text-red-400 font-mono">Rp 360.000</span>
+                        </div>
+                        <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-800">
+                            <span class="text-xs text-slate-400 block mb-1">Setara Paket Pembalut</span>
+                            <span id="tamponEquiv" class="text-lg font-bold text-amber-400 font-mono">~ 18 Bungkus</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-500 italic">*Perhitungan sederhana berdasarkan estimasi proporsi konsumsi kena PPN.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Voices & Comment Form -->
+        <section id="suara-rakyat" class="space-y-6">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Suara & Petisi Warga</h2>
+                <p class="text-slate-400 text-sm">Sampaikan pendapatmu mengenai isu pajak yang dinilai tidak adil bagi masyarakat kecil.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Form Suara -->
+                <div class="glass-card rounded-2xl p-6 lg:col-span-1 space-y-4">
+                    <h3 class="text-lg font-semibold text-white flex items-center gap-2">
+                        <i data-lucide="pen-tool" class="w-5 h-5 text-red-400"></i>
+                        Kirim Pendapat
+                    </h3>
+                    <form id="commentForm" class="space-y-3">
+                        <div>
+                            <input type="text" id="userName" placeholder="Nama / Inisial" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-red-500">
+                        </div>
+                        <div>
+                            <select id="userCategory" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-red-500">
+                                <option value="Pajak Pembalut">Isu Pajak Pembalut</option>
+                                <option value="Sektor Informal (Cukur/Pijat)">Isu Cukur / Pijat / UMKM</option>
+                                <option value="PPN 12%">Isu Kenaikan PPN 12%</option>
+                                <option value="Umum">Pandangan Umum</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea id="userComment" rows="3" placeholder="Tuliskan aspirasi atau kritikmu di sini..." required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-red-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-500 text-white font-medium py-2.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Publikasikan Suara</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Feed Suara -->
+                <div class="glass-card rounded-2xl p-6 lg:col-span-2 space-y-4">
+                    <h3 class="text-lg font-semibold text-white flex items-center justify-between">
+                        <span class="flex items-center gap-2">
+                            <i data-lucide="message-square" class="w-5 h-5 text-orange-400"></i>
+                            Aspirasi Terbaru
+                        </span>
+                        <span id="commentCount" class="text-xs bg-slate-800 px-2.5 py-1 rounded-full text-slate-400">3 Pesan</span>
+                    </h3>
+                    <div id="commentsFeed" class="space-y-3 max-h-[320px] overflow-y-auto pr-2">
+                        <!-- Sample Comment 1 -->
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800/80 space-y-1">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="font-bold text-slate-200">Rina S.</span>
+                                <span class="text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded border border-pink-500/20">Pajak Pembalut</span>
+                            </div>
+                            <p class="text-slate-300 text-sm">"Pembalut itu barang primer, menstruasi bukan pilihan! Sangat tidak etis kalau kebutuhan biologis bulanan wanita dibebani PPN."</p>
+                        </div>
+                        <!-- Sample Comment 2 -->
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800/80 space-y-1">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="font-bold text-slate-200">Budi K.</span>
+                                <span class="text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">Sektor Informal</span>
+                            </div>
+                            <p class="text-slate-300 text-sm">"Tukang cukur dan pijat keliling itu kerja keras sambung hidup. Seharusnya dibantu permodalannya, bukan malah diincar pajaknya."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-6 mt-16 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>Halaman kritik sosial perpajakan Indonesia - Siap di-deploy pada Nginx / Web Server.</p>
+            <p>&copy; 2026 Suara Rakyat Indonesia. Hak Bersuara Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Tax Calculator Logic
+        const expenseInput = document.getElementById('monthlyExpense');
+        const ppnResult = document.getElementById('ppnResult');
+        const tamponEquiv = document.getElementById('tamponEquiv');
+
+        function calculateTax() {
+            const val = parseFloat(expenseInput.value) || 0;
+            // Assuming 12% PPN on standard spending ratio
+            const tax = Math.round(val * 0.12);
+            const tampons = Math.round(tax / 20000); // Estimasi Rp 20.000 per pak
+
+            ppnResult.textContent = 'Rp ' + tax.toLocaleString('id-ID');
+            tamponEquiv.textContent = `~ ${tampons} Bungkus`;
+        }
+
+        expenseInput.addEventListener('input', calculateTax);
+
+        // Dynamic Comments Feed
+        const commentForm = document.getElementById('commentForm');
+        const commentsFeed = document.getElementById('commentsFeed');
+        const commentCount = document.getElementById('commentCount');
+        let totalComments = 2;
+
+        commentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const category = document.getElementById('userCategory').value;
+            const text = document.getElementById('userComment').value;
+
+            if(!name || !text) return;
+
+            const badgeColor = category.includes('Pembalut') 
+                ? 'text-pink-400 bg-pink-500/10 border-pink-500/20' 
+                : category.includes('Informal') 
+                ? 'text-amber-400 bg-amber-500/10 border-amber-500/20' 
+                : 'text-red-400 bg-red-500/10 border-red-500/20';
+
+            const newComment = document.createElement('div');
+            newComment.className = 'bg-slate-900/60 p-4 rounded-xl border border-slate-800/80 space-y-1 transition-all animate-fade-in';
+            newComment.innerHTML = `
+                <div class="flex justify-between items-center text-xs">
+                    <span class="font-bold text-slate-200">${escapeHtml(name)}</span>
+                    <span class="${badgeColor} px-2 py-0.5 rounded border">${escapeHtml(category)}</span>
+                </div>
+                <p class="text-slate-300 text-sm">"${escapeHtml(text)}"</p>
+            `;
+
+            commentsFeed.prepend(newComment);
+            totalComments++;
+            commentCount.textContent = `${totalComments} Pesan`;
+
+            // Reset form
+            commentForm.reset();
+        });
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
